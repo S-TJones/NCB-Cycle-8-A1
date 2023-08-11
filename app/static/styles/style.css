@@ -34,6 +34,11 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.product_image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
 /* Footer */
 footer {
     background-color: #000;

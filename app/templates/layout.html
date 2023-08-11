@@ -15,12 +15,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}" />
 </head>
 
 <body>
     <header class="navbar">
         <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+        <a href="{{ url_for('product') }}" class="navbar-item">Products</a>
         <a href="{{ url_for('about') }}" class="navbar-item">About</a>
         <a href="{{ url_for('contact') }}" class="navbar-item">Contact</a>
     </header>
