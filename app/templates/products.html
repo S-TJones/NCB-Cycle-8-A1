@@ -6,14 +6,19 @@ Products
 
 {% block content %}
 <h1>Products</h1>
-<ul>
+<div class="product-list">
     {% for product in products %}
-    <li>
-        <!--
-        {# <a href="{{ url_for('product', product_id=product.id) }}">{{ product.name }}</a> #}
-        -->
-        <a href="/product/{{ product.id }}">{{ product.name }}</a>
-    </li>
+    <a href="{{ url_for('get_product', product_id=product.id) }}">
+        <div class="product_preview">
+            <div class="top">
+                <img class="preview_image" src="{{ url_for('static', filename='images/' + product.image) }}" class="product_image" alt="{{ product.name }} Image">
+            </div>
+            <div class="base">
+                <p>{{ product.name }}</p>
+                <p>{{ product.price }}</p>
+            </div>
+        </div>
+    </a>
     {% endfor %}
-</ul>
+</div>
 {% endblock %}

@@ -24,10 +24,10 @@ def contact():
 
 # Products----------------------------------------------
 # Current list of products
-thumb_drive = {"id": 0, "name": "Thumb/Flash Drives", "price": 23.99, "image": "thumb-drives.jpg"}
-water_bottle = {"id": 1, "name": "Water Bottles", "price": 19.89, "image": "water-bottle-mira.jpg"}
-pack_pencils = {"id": 2, "name": "Pack of Pencils", "price": 2.99, "image": "pencil-pack.jpg"}
-small_speakers = {"id": 3, "name": "Small Speakers", "price": 49.99, "image": "small-speaker.jpg"}
+thumb_drive = {"id": 0, "name": "Thumb/Flash Drives", "price": 23.99, "image": "thumb-drives.jpg", "description": "Description for Product 1."}
+water_bottle = {"id": 1, "name": "Water Bottles", "price": 19.89, "image": "water-bottle-mira.jpg", "description": "Description for Product 2."}
+pack_pencils = {"id": 2, "name": "Pack of Pencils", "price": 2.99, "image": "pencil-pack.jpg", "description": "Description for Product 3."}
+small_speakers = {"id": 3, "name": "Small Speakers", "price": 49.99, "image": "small-speaker.jpg", "description": "Description for Product 4."}
 all_products = [thumb_drive, water_bottle, pack_pencils, small_speakers]
 
 @app.route('/product/')
